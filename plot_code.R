@@ -13,7 +13,7 @@ moval <- ce3 %>%
   left_join(county) %>%
   filter(City == "Moreno Valley")
 
-## census tract average household income against total panel area for each census tract
+## census tract average household income against total panel capacity for each census tract
 moval %>%
   mutate(
     total_panel_kw = total_panel_area * 144 * (1 / 2535) * .320 ## convert to total panel capacity in kW
